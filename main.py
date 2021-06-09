@@ -31,14 +31,9 @@ def get_monkey():
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
-    
-
-@client.event
-async def on_ready():
-    channel = client.get_channel(850132822399647767)
+    channel = client.get_channel(int(os.getenv('CHANNEL')))
     await channel.send('welcome to monkey bot! heres a list of commands: \n $hello \n $monkey \n $song')
     
-
 @client.event
 async def on_message(message):
     if message.author == client.user:
