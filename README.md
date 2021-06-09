@@ -1,0 +1,1 @@
+literally just a discord bot centered around monkeys for some reason. my goal is to integrate the spotify api so i can have a list of songs with the word "monkey" in it for the user to listen to :) 
